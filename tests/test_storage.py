@@ -54,3 +54,30 @@ def test_seen_store_roundtrip(tmp_path: Path):
     assert not store.has_seen("greenhouse:never:9")
     store2 = SeenStore(tmp_path / "seen.json")  # reload from disk
     assert store2.has_seen("lever:b:2")
+
+
+def test_lead_store_quarantines_corrupt_json(tmp_path: Path):
+    p = tmp_path / "leads.json"
+    p.write_text("{not json", encoding="utf-8")
+    store = LeadStore(p)
+    assert store.load() == []
+    assert not p.exists()  # corrupt file moved aside
+    assert any(f.name.startswith("leads.corrupt.") for f in tmp_path.iterdir())
+
+
+def test_lead_store_skips_invalid_lead_records(tmp_path: Path):
+    p = tmp_path / "leads.json"
+    valid = make_lead("greenhouse:a:1").model_dump(mode="json")
+    p.write_text(json.dumps([valid, {"lead_id": "broken"}]), encoding="utf-8")
+    store = LeadStore(p)
+    loaded = store.load()
+    assert len(loaded) == 1
+    assert loaded[0].lead_id == "greenhouse:a:1"
+
+
+def test_seen_store_quarantines_corrupt_json(tmp_path: Path):
+    p = tmp_path / "seen.json"
+    p.write_text("not json", encoding="utf-8")
+    store = SeenStore(p)
+    assert not store.has_seen("anything")
+    assert any(f.name.startswith("seen.corrupt.") for f in tmp_path.iterdir())
