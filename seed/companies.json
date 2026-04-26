@@ -1,0 +1,12 @@
+[
+  {"name": "Airtable", "ats_provider": "greenhouse", "ats_slug": "airtable", "industry": "SaaS"},
+  {"name": "Asana", "ats_provider": "greenhouse", "ats_slug": "asana", "industry": "SaaS"},
+  {"name": "Anthropic", "ats_provider": "greenhouse", "ats_slug": "anthropic", "industry": "AI"},
+  {"name": "Stripe", "ats_provider": "greenhouse", "ats_slug": "stripe", "industry": "Fintech"},
+  {"name": "Discord", "ats_provider": "greenhouse", "ats_slug": "discord", "industry": "Consumer"},
+  {"name": "Coinbase", "ats_provider": "greenhouse", "ats_slug": "coinbase", "industry": "Fintech"},
+  {"name": "Plaid", "ats_provider": "lever", "ats_slug": "plaid", "industry": "Fintech"},
+  {"name": "Figma", "ats_provider": "greenhouse", "ats_slug": "figma", "industry": "SaaS"},
+  {"name": "Vercel", "ats_provider": "greenhouse", "ats_slug": "vercel", "industry": "DevTools"},
+  {"name": "Instacart", "ats_provider": "greenhouse", "ats_slug": "instacart", "industry": "Consumer"}
+]
