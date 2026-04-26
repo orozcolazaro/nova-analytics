@@ -1,0 +1,46 @@
+[
+  {
+    "name": "obvious_hot_saas_midmarket",
+    "company": {"name": "TestCo", "ats_provider": "greenhouse", "ats_slug": "x", "country": "US", "size_estimate": "500-1000", "industry": "SaaS"},
+    "jobs": [
+      {"id": "1", "title": "Senior QA Automation Engineer", "url": "https://x/y", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-04-04", "tech_stack": ["Cypress","TypeScript","AWS"], "raw_description": "Senior SDET with Cypress and Playwright. Distributed team across US and Latin America. Open 3+ weeks."},
+      {"id": "2", "title": "DevOps Engineer", "url": "https://x/y", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-04-10", "tech_stack": ["AWS","Terraform"], "raw_description": "DevOps with AWS, Terraform"}
+    ],
+    "expected_score_min": 70
+  },
+  {
+    "name": "obvious_cold_tiny_startup_no_qa",
+    "company": {"name": "Tiny", "ats_provider": "lever", "ats_slug": "x", "country": "US", "size_estimate": "1-10", "industry": "Pre-seed"},
+    "jobs": [
+      {"id": "1", "title": "Founding Engineer", "url": "https://x/y", "location": "San Francisco, CA", "remote_friendly": false, "posted_date": "2026-04-23", "tech_stack": ["Rust"], "raw_description": "Founding eng in SF, equity heavy. Onsite required."}
+    ],
+    "expected_score_max": 40
+  },
+  {
+    "name": "stale_qa_enterprise",
+    "company": {"name": "BigCo", "ats_provider": "greenhouse", "ats_slug": "x", "country": "US", "size_estimate": "5000-10000", "industry": "Healthcare"},
+    "jobs": [
+      {"id": "1", "title": "QA Automation Lead", "url": "https://x/y", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-02-20", "tech_stack": ["Selenium","Java"], "raw_description": "Lead QA Automation. Open 60+ days. Selenium, Java, distributed team welcome."},
+      {"id": "2", "title": "Senior Backend Engineer", "url": "https://x/y", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-02-25", "tech_stack": ["Java","Kafka"], "raw_description": "Backend engineer with Java/Kafka. Distributed."}
+    ],
+    "expected_score_min": 65
+  },
+  {
+    "name": "onsite_only_midmarket",
+    "company": {"name": "OnsiteCo", "ats_provider": "greenhouse", "ats_slug": "x", "country": "US", "size_estimate": "500-1000", "industry": "Manufacturing"},
+    "jobs": [
+      {"id": "1", "title": "QA Engineer", "url": "https://x/y", "location": "Detroit, MI", "remote_friendly": false, "posted_date": "2026-04-20", "tech_stack": ["Selenium"], "raw_description": "Onsite QA Engineer. Detroit only. No remote. US citizens only."}
+    ],
+    "expected_score_max": 55
+  },
+  {
+    "name": "multi_qa_devops_remote_friendly",
+    "company": {"name": "RemoteCo", "ats_provider": "lever", "ats_slug": "x", "country": "US", "size_estimate": "200-500", "industry": "Fintech"},
+    "jobs": [
+      {"id": "1", "title": "Senior QA Engineer", "url": "https://x/y", "location": "Remote - Worldwide", "remote_friendly": true, "posted_date": "2026-03-25", "tech_stack": ["Cypress","Playwright"], "raw_description": "Senior QA. Cypress, Playwright. Open 30+ days. We hire globally — strong Latam presence."},
+      {"id": "2", "title": "QA Automation Engineer", "url": "https://x/y", "location": "Remote", "remote_friendly": true, "posted_date": "2026-04-01", "tech_stack": ["Cypress"], "raw_description": "QA Automation. Distributed team."},
+      {"id": "3", "title": "Senior DevOps Engineer", "url": "https://x/y", "location": "Remote", "remote_friendly": true, "posted_date": "2026-04-05", "tech_stack": ["AWS","Kubernetes"], "raw_description": "DevOps. AWS, K8s. Distributed team across US and Latin America."}
+    ],
+    "expected_score_min": 75
+  }
+]
