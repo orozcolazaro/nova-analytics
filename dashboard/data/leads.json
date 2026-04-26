@@ -1,0 +1,34 @@
+[
+  {
+    "lead_id": "greenhouse:airtable:1",
+    "company": {"name": "Airtable", "ats_provider": "greenhouse", "ats_slug": "airtable", "country": "US", "size_estimate": "500-1000", "industry": "SaaS", "first_seen": "2026-04-25"},
+    "active_jobs": [
+      {"id": "1", "title": "Senior QA Automation Engineer", "url": "https://example.com/job/1", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-04-12", "days_open": 13, "tech_stack": ["Cypress","TypeScript","AWS"]}
+    ],
+    "qa_jobs_count": 1,
+    "all_it_jobs_count": 1,
+    "lead_score": 84,
+    "score_breakdown": {"qa_relevance": 22, "company_size": 18, "urgency": 14, "nearshore_fit": 18, "deal_size": 12},
+    "score_rationale": "SaaS mid-market with active QA role. Stack matches Greensoft strengths.",
+    "outreach_message": {"subject": "Helping Airtable close 8 IT roles", "body": "Hi there,\n\nNoticed Airtable's QA Automation role has been open 3+ weeks.\n\n[Your name]\nGreensoft Technologies", "channel": "email"},
+    "status": "new",
+    "first_seen": "2026-04-25",
+    "last_updated": "2026-04-25T07:14:32Z"
+  },
+  {
+    "lead_id": "lever:plaid:2",
+    "company": {"name": "Plaid", "ats_provider": "lever", "ats_slug": "plaid", "country": "US", "size_estimate": "1000-2000", "industry": "Fintech", "first_seen": "2026-04-25"},
+    "active_jobs": [
+      {"id": "2", "title": "DevOps Engineer", "url": "https://example.com/job/2", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-04-20", "days_open": 5, "tech_stack": ["AWS","Terraform"]}
+    ],
+    "qa_jobs_count": 0,
+    "all_it_jobs_count": 1,
+    "lead_score": 62,
+    "score_breakdown": {"qa_relevance": 8, "company_size": 18, "urgency": 8, "nearshore_fit": 18, "deal_size": 10},
+    "score_rationale": "Fintech mid-market, no QA opening yet but DevOps active.",
+    "outreach_message": {"subject": "Helping Plaid scale DevOps", "body": "Hi there,\n\nSaw Plaid's DevOps role.\n\n[Your name]\nGreensoft Technologies", "channel": "email"},
+    "status": "new",
+    "first_seen": "2026-04-25",
+    "last_updated": "2026-04-25T07:14:32Z"
+  }
+]
