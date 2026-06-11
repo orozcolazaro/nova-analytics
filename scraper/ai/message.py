@@ -44,5 +44,5 @@ def generate_message(
         log.warning("message parse failed for %s: %s", company.name, e)
         return OutreachMessage(
             subject=f"[needs review] {company.name}",
-            body="Message generation failed — manual review required.\n\n[Your name]\nGreensoft Technologies",
+            body="Message generation failed — manual review required.\n\n[Your name]\nNova Analytics",
         )

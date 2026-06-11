@@ -1,7 +1,7 @@
 [project]
-name = "greensoft-leadgen"
+name = "nova-analytics"
 version = "0.1.0"
-description = "AI-driven B2B lead generation for Greensoft Technologies"
+description = "AI-driven B2B lead generation for Nova Analytics"
 requires-python = ">=3.11"
 dependencies = [
     "httpx>=0.27",

@@ -1,7 +1,6 @@
 import json
-import pytest
 from unittest.mock import patch
-from scraper.ai.filter import filter_job, FilterResult
+from scraper.ai.filter import filter_job
 from scraper.models import Job
 from datetime import date
 

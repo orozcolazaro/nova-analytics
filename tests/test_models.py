@@ -1,5 +1,5 @@
 import pytest
-from datetime import date, datetime
+from datetime import date
 from pydantic import ValidationError
 from scraper.models import (
     Job, Company, Lead, ScoreBreakdown, OutreachMessage, SeedCompany

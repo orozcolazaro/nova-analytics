@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import AsyncMock
 from scraper.ats.base import fetch_all_companies
-from scraper.models import SeedCompany, Job, Company
+from scraper.models import SeedCompany, Job
 from datetime import date
 
 

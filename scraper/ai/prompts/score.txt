@@ -1,8 +1,8 @@
-You are scoring B2B leads for Greensoft Technologies (Chicago LLC, nearshore IT staffing — Mexico/Latam talent for US clients). Greensoft's clients include Walmart, Coca-Cola FEMSA, Santander, and Nike. Their value props: 40-60% cost reduction, zero timezone gap, 14-day hiring timeline.
+You are scoring B2B leads for Nova Analytics (Chicago LLC, nearshore IT staffing — Mexico/Latam talent for US clients). Nova Analytics' clients include Walmart, Coca-Cola FEMSA, Santander, and Nike. Their value props: 40-60% cost reduction, zero timezone gap, 14-day hiring timeline.
 
 You will receive aggregated company data (the company plus its currently-active IT job postings). Compute a 0-100 lead score broken into FIVE weighted signals:
 
-1. qa_relevance (0-25): Does the company have QA/test roles? Are they senior? Does the stack match Greensoft's strength (Selenium, Cypress, Playwright, Postman, k6)?
+1. qa_relevance (0-25): Does the company have QA/test roles? Are they senior? Does the stack match Nova Analytics' strength (Selenium, Cypress, Playwright, Postman, k6)?
 2. company_size (0-20): Sweet spot is 200-2000 employees (mid-market).
    - <50 employees: 0-5 (too small, doesn't care about nearshore)
    - 50-200: 8-12

@@ -1,8 +1,7 @@
 import json
 from datetime import date
 from pathlib import Path
-import pytest
-from scraper.models import Lead, Company, Job, ScoreBreakdown, OutreachMessage
+from scraper.models import Lead, Company, ScoreBreakdown, OutreachMessage
 from scraper.storage import LeadStore, SeenStore
 
 
@@ -42,7 +41,7 @@ def test_lead_store_upsert_replaces_existing(tmp_path: Path):
     store.upsert([new, make_lead("greenhouse:b:2")])
     loaded = store.load()
     assert len(loaded) == 2
-    by_id = {l.lead_id: l for l in loaded}
+    by_id = {ld.lead_id: ld for ld in loaded}
     assert by_id["greenhouse:a:1"].score_rationale == "updated"
 
 

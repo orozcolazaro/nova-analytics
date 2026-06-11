@@ -1,8 +1,7 @@
 import json
-import pytest
 from unittest.mock import patch
 from datetime import date
-from scraper.ai.score import score_company, ScoreResult
+from scraper.ai.score import score_company
 from scraper.models import Company, Job
 
 

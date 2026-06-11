@@ -1,8 +1,8 @@
 import pytest
 from datetime import date
-from unittest.mock import AsyncMock, patch, MagicMock
+from unittest.mock import AsyncMock, MagicMock
 from scraper.pipeline import run_pipeline, PipelineSummary
-from scraper.models import SeedCompany, Job, Company, ScoreBreakdown, OutreachMessage
+from scraper.models import SeedCompany, Job, ScoreBreakdown, OutreachMessage
 from scraper.ai.filter import FilterResult
 from scraper.ai.score import ScoreResult
 
@@ -32,7 +32,7 @@ async def test_pipeline_happy_path(tmp_path):
     ))
     message_fn = MagicMock(return_value=OutreachMessage(
         subject="Helping Acme close 2 IT roles",
-        body="...short body... 15-min call?\n\n[Your name]\nGreensoft Technologies",
+        body="...short body... 15-min call?\n\n[Your name]\nNova Analytics",
     ))
 
     summary = await run_pipeline(
@@ -65,8 +65,8 @@ async def test_pipeline_skips_seen_jobs(tmp_path):
         breakdown=ScoreBreakdown(qa_relevance=10, company_size=10, urgency=10, nearshore_fit=10, deal_size=5),
         rationale="r",
     ))
-    message_fn = MagicMock(return_value=OutreachMessage(subject="s", body="b? [Your name]\nGreensoft Technologies"))
-    summary = await run_pipeline(
+    message_fn = MagicMock(return_value=OutreachMessage(subject="s", body="b? [Your name]\nNova Analytics"))
+    await run_pipeline(
         seed_companies=seed,
         leads_path=tmp_path / "leads.json",
         seen_path=seen_path,

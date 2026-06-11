@@ -1,8 +1,7 @@
 import json
 from unittest.mock import patch
-from datetime import date
 from scraper.ai.message import generate_message
-from scraper.models import Company, Job, ScoreBreakdown
+from scraper.models import Company, ScoreBreakdown
 
 
 def test_generate_message_returns_message_object():
@@ -10,10 +9,10 @@ def test_generate_message_returns_message_object():
         "subject": "Helping Acme close 6 IT roles",
         "body": (
             "Hi there,\n\nNoticed Acme's Senior QA role has been open 4 weeks. "
-            "Greensoft places nearshore engineers from Mexico — same model we use "
+            "Nova Analytics places nearshore engineers from Mexico — same model we use "
             "with Walmart, Coca-Cola FEMSA, and Nike.\n\n40-60% cost reduction, "
             "zero timezone gap, 14-day hiring.\n\nOpen to a 15-min call this week?\n\n"
-            "[Your name]\nGreensoft Technologies"
+            "[Your name]\nNova Analytics"
         ),
     })
     company = Company(name="Acme", ats_provider="greenhouse", ats_slug="acme", country="US")
@@ -21,7 +20,7 @@ def test_generate_message_returns_message_object():
     with patch("scraper.ai.message.call_claude", return_value=fake):
         msg = generate_message(company, [], breakdown, "rationale")
     assert msg.subject.startswith("Helping Acme")
-    assert "Greensoft" in msg.body
+    assert "Nova Analytics" in msg.body
 
 
 def test_generate_message_falls_back_on_bad_json():
