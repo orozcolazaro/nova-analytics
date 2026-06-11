@@ -10,8 +10,8 @@
 // demonstrable without any backend. Real Supabase auth activates automatically
 // the moment valid values are present here.
 
-export const SUPABASE_URL = "YOUR-PROJECT.supabase.co";
-export const SUPABASE_ANON_KEY = "YOUR-ANON-KEY";
+export const SUPABASE_URL = "https://mfkdpwupggudwbnaowot.supabase.co";
+export const SUPABASE_ANON_KEY = "sb_publishable_ZPLJbP3-U_Ep9d7x2018sQ_CPd-5Gtl";
 
 // Where to send users after a successful login / signup.
 export const AFTER_AUTH_REDIRECT = "/dashboard";
