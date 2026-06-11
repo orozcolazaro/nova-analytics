@@ -4,9 +4,9 @@
 
 | Item                 | Link                                                        |
 | -------------------- | ----------------------------------------------------------- |
-| Forked GitHub repo   | `https://github.com/<your-username>/nova-analytics`         |
-| Live deployment URL  | `https://nova-analytics.vercel.app`  (HTTPS)                |
-| Video walkthrough    | `<YouTube unlisted / Loom link>`                            |
+| GitHub repo          | <https://github.com/orozcolazaro/nova-analytics>            |
+| Live deployment URL  | <https://nova-analytics-sigma.vercel.app> (HTTPS)           |
+| Video walkthrough    | `<YouTube unlisted / Loom link — add after recording>`      |
 
 ## Test credentials
 

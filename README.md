@@ -12,7 +12,8 @@ This repository contains:
 - The **AI pipeline** (Python) that scrapes ATS feeds, scores companies with
   Claude, and drafts outreach — the engine behind the data.
 
-> Live demo: _add your Vercel URL here after deploying (see Deployment)._
+> **Live demo:** <https://nova-analytics-sigma.vercel.app>
+> **Test login:** `admin@novaanalytics.io` / `NovaDemo2026!`
 
 ---
 
