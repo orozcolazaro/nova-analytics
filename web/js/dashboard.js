@@ -56,16 +56,16 @@ function leadsApp() {
     },
 
     scoreClass(s) {
-      if (s >= 70) return "text-emerald-700";
-      if (s >= 50) return "text-amber-700";
+      if (s >= 70) return "text-emerald-600";
+      if (s >= 50) return "text-amber-600";
       return "text-slate-500";
     },
 
     statusClass(s) {
       const map = {
-        new: "bg-blue-100 text-blue-800",
+        new: "bg-indigo-100 text-indigo-800",
         contacted: "bg-amber-100 text-amber-800",
-        replied: "bg-purple-100 text-purple-800",
+        replied: "bg-fuchsia-100 text-fuchsia-800",
         client: "bg-emerald-100 text-emerald-800",
         dead: "bg-slate-200 text-slate-600",
       };

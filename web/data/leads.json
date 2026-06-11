@@ -1,0 +1,132 @@
+[
+  {
+    "lead_id": "greenhouse:airtable:1",
+    "company": {"name": "Airtable", "ats_provider": "greenhouse", "ats_slug": "airtable", "country": "US", "size_estimate": "500-1000", "industry": "SaaS", "first_seen": "2026-06-09"},
+    "active_jobs": [
+      {"id": "1", "title": "Senior QA Automation Engineer", "url": "https://example.com/job/1", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-05-27", "days_open": 13, "tech_stack": ["Cypress","TypeScript","AWS"]},
+      {"id": "1b", "title": "Staff SDET", "url": "https://example.com/job/1b", "location": "San Francisco, CA", "remote_friendly": false, "posted_date": "2026-06-01", "days_open": 8, "tech_stack": ["Playwright","Go"]}
+    ],
+    "qa_jobs_count": 2,
+    "all_it_jobs_count": 6,
+    "lead_score": 84,
+    "score_breakdown": {"qa_relevance": 22, "company_size": 18, "urgency": 14, "nearshore_fit": 18, "deal_size": 12},
+    "score_rationale": "SaaS mid-market with two active QA roles open 1-2 weeks. High-intent hiring signal and strong fit for your target profile.",
+    "outreach_message": {"subject": "Helping Airtable close 6 open IT roles", "body": "Hi there,\n\nNova Analytics flagged that Airtable's Senior QA Automation role has been open 3+ weeks alongside 5 other IT openings — a classic scaling signal.\n\nWorth a quick chat on how we help teams like yours ship faster?\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "new",
+    "first_seen": "2026-06-09",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "lever:plaid:2",
+    "company": {"name": "Plaid", "ats_provider": "lever", "ats_slug": "plaid", "country": "US", "size_estimate": "1000-2000", "industry": "Fintech", "first_seen": "2026-06-08"},
+    "active_jobs": [
+      {"id": "2", "title": "DevOps Engineer", "url": "https://example.com/job/2", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-06-05", "days_open": 5, "tech_stack": ["AWS","Terraform"]}
+    ],
+    "qa_jobs_count": 0,
+    "all_it_jobs_count": 4,
+    "lead_score": 62,
+    "score_breakdown": {"qa_relevance": 8, "company_size": 18, "urgency": 8, "nearshore_fit": 18, "deal_size": 10},
+    "score_rationale": "Fintech mid-market, no QA opening yet but DevOps hiring is active — early expansion signal worth nurturing.",
+    "outreach_message": {"subject": "Helping Plaid scale platform reliability", "body": "Hi there,\n\nNova Analytics surfaced Plaid's new DevOps opening. Teams hiring platform roles usually need QA coverage shortly after.\n\nHappy to share how we've helped similar fintechs.\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "contacted",
+    "first_seen": "2026-06-08",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "greenhouse:notion:3",
+    "company": {"name": "Notion", "ats_provider": "greenhouse", "ats_slug": "notion", "country": "US", "size_estimate": "500-1000", "industry": "SaaS", "first_seen": "2026-06-07"},
+    "active_jobs": [
+      {"id": "3", "title": "QA Lead, Core Platform", "url": "https://example.com/job/3", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-05-18", "days_open": 23, "tech_stack": ["Playwright","React","PostgreSQL"]}
+    ],
+    "qa_jobs_count": 1,
+    "all_it_jobs_count": 9,
+    "lead_score": 91,
+    "score_breakdown": {"qa_relevance": 24, "company_size": 19, "urgency": 19, "nearshore_fit": 19, "deal_size": 10},
+    "score_rationale": "QA Lead role open 3+ weeks with 9 total IT openings — strong urgency and an exceptional fit for your target profile.",
+    "outreach_message": {"subject": "Notion's QA Lead role has been open 23 days", "body": "Hi there,\n\nNova Analytics noticed Notion's QA Lead role has stayed open 23 days while you scale 9 other IT positions. That gap is exactly where we help.\n\nOpen to a 15-minute intro?\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "replied",
+    "first_seen": "2026-06-07",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "lever:ramp:4",
+    "company": {"name": "Ramp", "ats_provider": "lever", "ats_slug": "ramp", "country": "US", "size_estimate": "200-500", "industry": "Fintech", "first_seen": "2026-06-06"},
+    "active_jobs": [
+      {"id": "4", "title": "Software Engineer in Test", "url": "https://example.com/job/4", "location": "New York, NY", "remote_friendly": false, "posted_date": "2026-06-02", "days_open": 8, "tech_stack": ["Jest","TypeScript","GCP"]}
+    ],
+    "qa_jobs_count": 1,
+    "all_it_jobs_count": 5,
+    "lead_score": 76,
+    "score_breakdown": {"qa_relevance": 21, "company_size": 15, "urgency": 12, "nearshore_fit": 17, "deal_size": 11},
+    "score_rationale": "Fast-growing fintech with an SDET opening and a lean QA org — good timing for a conversation.",
+    "outreach_message": {"subject": "Ramp is scaling QA — a quick idea", "body": "Hi there,\n\nNova Analytics flagged Ramp's new SDET role. As you scale, nearshore QA capacity is a fast way to keep release velocity high.\n\nWorth comparing notes?\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "client",
+    "first_seen": "2026-06-06",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "greenhouse:figma:5",
+    "company": {"name": "Figma", "ats_provider": "greenhouse", "ats_slug": "figma", "country": "US", "size_estimate": "1000-2000", "industry": "Design SaaS", "first_seen": "2026-06-05"},
+    "active_jobs": [
+      {"id": "5", "title": "Senior Test Engineer", "url": "https://example.com/job/5", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-05-30", "days_open": 11, "tech_stack": ["WebdriverIO","TypeScript"]}
+    ],
+    "qa_jobs_count": 1,
+    "all_it_jobs_count": 7,
+    "lead_score": 79,
+    "score_breakdown": {"qa_relevance": 22, "company_size": 18, "urgency": 12, "nearshore_fit": 17, "deal_size": 10},
+    "score_rationale": "Design-SaaS leader with a senior QA opening and broad IT hiring — well-aligned to your strengths.",
+    "outreach_message": {"subject": "A faster path for Figma's QA hiring", "body": "Hi there,\n\nNova Analytics spotted Figma's Senior Test Engineer role. We help product teams add senior QA coverage in days, not months.\n\nKeen to share how?\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "new",
+    "first_seen": "2026-06-05",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "lever:linear:6",
+    "company": {"name": "Linear", "ats_provider": "lever", "ats_slug": "linear", "country": "US", "size_estimate": "50-200", "industry": "Dev Tools", "first_seen": "2026-06-04"},
+    "active_jobs": [
+      {"id": "6", "title": "Backend Engineer", "url": "https://example.com/job/6", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-06-06", "days_open": 4, "tech_stack": ["Node.js","GraphQL"]}
+    ],
+    "qa_jobs_count": 0,
+    "all_it_jobs_count": 2,
+    "lead_score": 41,
+    "score_breakdown": {"qa_relevance": 5, "company_size": 9, "urgency": 7, "nearshore_fit": 14, "deal_size": 6},
+    "score_rationale": "Small dev-tools team, no QA signal yet and limited headcount — low priority for now.",
+    "outreach_message": {"subject": "Keeping an eye on Linear", "body": "Hi there,\n\nNova Analytics is tracking Linear's hiring. No QA signal yet, but we'll surface it the moment one appears.\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "dead",
+    "first_seen": "2026-06-04",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "greenhouse:retool:7",
+    "company": {"name": "Retool", "ats_provider": "greenhouse", "ats_slug": "retool", "country": "US", "size_estimate": "200-500", "industry": "Dev Tools", "first_seen": "2026-06-09"},
+    "active_jobs": [
+      {"id": "7", "title": "QA Automation Engineer", "url": "https://example.com/job/7", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-06-03", "days_open": 7, "tech_stack": ["Cypress","React"]},
+      {"id": "7b", "title": "Release Manager", "url": "https://example.com/job/7b", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-06-04", "days_open": 6, "tech_stack": ["CI/CD"]}
+    ],
+    "qa_jobs_count": 1,
+    "all_it_jobs_count": 5,
+    "lead_score": 73,
+    "score_breakdown": {"qa_relevance": 20, "company_size": 15, "urgency": 13, "nearshore_fit": 16, "deal_size": 9},
+    "score_rationale": "Dev-tools company hiring both QA and release management — coordinated quality investment, good timing.",
+    "outreach_message": {"subject": "Retool is investing in release quality", "body": "Hi there,\n\nNova Analytics flagged Retool hiring QA and a Release Manager together — a clear quality-investment signal. We can accelerate that.\n\nWorth a chat?\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "contacted",
+    "first_seen": "2026-06-09",
+    "last_updated": "2026-06-10T07:14:32Z"
+  },
+  {
+    "lead_id": "lever:datadog:8",
+    "company": {"name": "Datadog", "ats_provider": "lever", "ats_slug": "datadog", "country": "US", "size_estimate": "2000+", "industry": "Observability", "first_seen": "2026-06-03"},
+    "active_jobs": [
+      {"id": "8", "title": "Principal QA Architect", "url": "https://example.com/job/8", "location": "Remote - US", "remote_friendly": true, "posted_date": "2026-05-21", "days_open": 20, "tech_stack": ["Python","Kubernetes","Selenium"]}
+    ],
+    "qa_jobs_count": 1,
+    "all_it_jobs_count": 14,
+    "lead_score": 88,
+    "score_breakdown": {"qa_relevance": 23, "company_size": 20, "urgency": 17, "nearshore_fit": 16, "deal_size": 12},
+    "score_rationale": "Enterprise observability leader with a long-open principal QA role and heavy IT hiring — large deal potential.",
+    "outreach_message": {"subject": "Datadog's Principal QA role — 20 days open", "body": "Hi there,\n\nNova Analytics surfaced Datadog's Principal QA Architect role, open 20 days amid 14 IT openings. At that scale, supplemental QA capacity pays for itself fast.\n\nOpen to explore?\n\nJordan Reyes\nNova Analytics", "channel": "email"},
+    "status": "new",
+    "first_seen": "2026-06-03",
+    "last_updated": "2026-06-10T07:14:32Z"
+  }
+]

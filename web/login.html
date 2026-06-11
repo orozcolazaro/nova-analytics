@@ -1,0 +1,102 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Log in — Nova Analytics</title>
+  <link rel="icon" type="image/svg+xml" href="./assets/favicon.svg" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="./assets/brand.css" />
+  <style>
+    .auth-wrap { min-height: 100dvh; display: grid; grid-template-columns: 1.05fr 1fr; }
+    .auth-aside { position: relative; overflow: hidden; padding: 48px; display: flex; flex-direction: column; justify-content: space-between; }
+    .auth-main { display: grid; place-items: center; padding: 40px 24px; }
+    .auth-card { width: min(420px, 100%); }
+    .auth-quote { font-family: var(--font-display); font-size: 1.85rem; line-height: 1.25; letter-spacing: -0.01em; max-width: 30ch; }
+    .auth-aside .glow { position: absolute; width: 460px; height: 460px; border-radius: 50%; filter: blur(40px); opacity: .5; }
+    @media (max-width: 860px) {
+      .auth-wrap { grid-template-columns: 1fr; }
+      .auth-aside { display: none; }
+    }
+  </style>
+</head>
+<body>
+  <div class="nova-atmos"></div>
+  <div class="auth-wrap">
+    <!-- brand panel -->
+    <aside class="auth-aside">
+      <div class="glow" style="background:var(--nova-violet); top:-120px; right:-100px"></div>
+      <div class="glow" style="background:var(--nova-cyan); bottom:-160px; left:-120px; opacity:.35"></div>
+      <a href="/" class="nova-brand" style="position:relative; z-index:1">
+        <img src="./assets/nova-mark.svg" alt="" />
+        <span class="nova-wordmark">Nova<b>Analytics</b></span>
+      </a>
+      <div style="position:relative; z-index:1">
+        <p class="nova-eyebrow" style="margin-bottom:20px"><span class="dot"></span>Lead intelligence platform</p>
+        <p class="auth-quote">Every hiring signal in your market, <span class="nova-grad-text">scored and sales-ready</span> before your competitors notice.</p>
+      </div>
+      <p style="position:relative; z-index:1; color:var(--nova-faint); font-size:.85rem">© <span id="yr"></span> Nova Analytics</p>
+    </aside>
+
+    <!-- form panel -->
+    <main class="auth-main">
+      <div class="auth-card">
+        <a href="/" class="nova-brand" style="margin-bottom:28px">
+          <img src="./assets/nova-mark.svg" alt="" />
+          <span class="nova-wordmark">Nova<b>Analytics</b></span>
+        </a>
+        <h1 style="font-family:var(--font-display); font-size:2rem; margin:0 0 6px; font-weight:600; letter-spacing:-0.01em">Welcome back</h1>
+        <p style="color:var(--nova-muted); margin:0 0 26px">Log in to your lead dashboard.</p>
+
+        <div id="demoNote" class="nova-alert" style="display:none; color:#CFE3FF; background:rgba(34,211,238,.08); border-color:rgba(34,211,238,.3)"></div>
+        <div id="formError" class="nova-alert nova-alert-error" style="display:none"></div>
+
+        <form id="loginForm" novalidate>
+          <div class="nova-field">
+            <label for="email">Email</label>
+            <input class="nova-input" id="email" type="email" autocomplete="email" placeholder="you@company.com" required />
+          </div>
+          <div class="nova-field">
+            <label for="password">Password</label>
+            <input class="nova-input" id="password" type="password" autocomplete="current-password" placeholder="••••••••" required />
+          </div>
+          <button type="submit" id="submitBtn" class="nova-btn nova-btn-primary" style="width:100%; margin-top:6px">Log in</button>
+        </form>
+
+        <p style="color:var(--nova-muted); font-size:.92rem; margin-top:22px; text-align:center">
+          New to Nova Analytics? <a href="/signup" style="font-weight:600">Create an account</a>
+        </p>
+      </div>
+    </main>
+  </div>
+
+  <script type="module">
+    import { signIn, AFTER_AUTH, usingSupabase } from "./js/auth.js";
+    document.getElementById("yr").textContent = new Date().getFullYear();
+
+    if (!usingSupabase) {
+      const n = document.getElementById("demoNote");
+      n.style.display = "block";
+      n.innerHTML = "Demo mode — try <b>admin@novaanalytics.io</b> / <b>NovaDemo2026!</b>";
+    }
+
+    const form = document.getElementById("loginForm");
+    const errBox = document.getElementById("formError");
+    const btn = document.getElementById("submitBtn");
+    form.addEventListener("submit", async (e) => {
+      e.preventDefault();
+      errBox.style.display = "none";
+      const email = document.getElementById("email").value.trim();
+      const password = document.getElementById("password").value;
+      if (!email || !password) { showError("Please enter your email and password."); return; }
+      btn.disabled = true; btn.textContent = "Logging in…";
+      const { user, error } = await signIn(email, password);
+      if (error) { showError(error); btn.disabled = false; btn.textContent = "Log in"; return; }
+      window.location.assign(AFTER_AUTH);
+    });
+    function showError(msg) { errBox.textContent = msg; errBox.style.display = "block"; }
+  </script>
+</body>
+</html>
