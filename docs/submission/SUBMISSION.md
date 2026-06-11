@@ -34,6 +34,9 @@ password: NovaDemo2026!
 - **Deploy:** static site on Vercel, HTTPS, push-to-deploy CI/CD.
 - **Tests/CI:** `pytest` suite green (36 passed, 5 external-API tests skipped);
   GitHub Actions runs ruff + pytest on every push.
+- **Development process:** built end-to-end with Claude Code — see
+  [`DEVELOPMENT-PROCESS.md`](DEVELOPMENT-PROCESS.md) for the methodology, key
+  prompts, the verification approach, and a production bug caught and fixed.
 
 ## Remaining account-bound steps (need your accounts)
 
