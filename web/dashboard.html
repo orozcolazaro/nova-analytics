@@ -93,8 +93,7 @@
             <th class="px-4 py-3 text-left">Status</th>
           </tr>
         </thead>
-        <tbody>
-          <template x-for="lead in filtered" :key="lead.lead_id">
+        <template x-for="lead in filtered" :key="lead.lead_id">
             <template x-if="true">
               <tbody>
                 <tr class="border-t border-slate-100 hover:bg-indigo-50/40 cursor-pointer transition-colors" @click="toggle(lead.lead_id)">
@@ -152,7 +151,6 @@
               </tbody>
             </template>
           </template>
-        </tbody>
       </table>
     </section>
 
